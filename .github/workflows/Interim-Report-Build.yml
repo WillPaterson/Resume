@@ -19,21 +19,21 @@ jobs:
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@edge
         with:
-          root_file: $MAIN_FILE.tex
-          working_directory: $WORKING_DIRECTORY
+          root_file: ${{ env.MAIN_FILE }}.tex
+          working_directory: ${{ env.WORKING_DIRECTORY }}
           args: -synctex=0 -interaction=nonstopmode --shell-escape -pdf -file-line-error
 
       - name: Save PDF as Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: $MAIN_FILE.pdf
-          path: $WORKING_DIRECTORY/$MAIN_FILE.pdf
+          name: ${{ env.MAIN_FILE }}.pdf
+          path: ${{ env.WORKING_DIRECTORY }}/${{ env.MAIN_FILE }}.pdf
 
       # - name: Create WIP Release
       #   id: create_release
       #   uses: ncipollo/release-action@v1
       #   with:
-      #     artifacts: "$WORKING_DIRECTORY/$MAIN_FILE.pdf"
+      #     artifacts: ${{ env.MAIN_FILE }}.pdf
       #     generateReleaseNotes: true
       #     allowUpdates: true
       #     prerelease: true
