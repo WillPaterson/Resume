@@ -21,7 +21,7 @@ jobs:
         with:
           root_file: ${{ env.MAIN_FILE }}.tex
           working_directory: ${{ env.WORKING_DIRECTORY }}
-          args: -synctex=0 -interaction=nonstopmode --shell-escape -pdf -file-line-error
+          args: -pdflatex=xelatex -synctex=0 -interaction=nonstopmode --shell-escape -pdf -file-line-error
 
       - name: Save PDF as Artifact
         uses: actions/upload-artifact@v3
