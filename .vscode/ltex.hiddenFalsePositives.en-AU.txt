@@ -1,0 +1,25 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcolspec=X[1.2,l] X[3,l], row1 = font=, c, m, row2-Z = l, Module Deliverables Features Microscope Viewer Allows users to zoom in and out of high-resolution images for detailed examination.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcolspec=X[1.5,l] X[2,l] X[2,l], row1 = font=, c, m, row2-Z = l, Product Deliverables Modules Description Minimum Viable Product Viewer Module, Annotation Module & Basic Interface Minimum Features needed for basic product Final Product Student View Module, Staff View Module & Canvas Connection Module A fully functional and complete version of the product.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QDatabase Syst.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcolspec=X[1.5,l] X[2,l] X[2,l], row1 = font=, c, m, row2-Z = l, Product Deliverables Modules Description\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcolspec=X[1.2,l] X[3,l], row1 = font=, c, m, row2-Z = l, Module Deliverables Features\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QTo simplify the test cases, the 'beforeEach' block is used to execute a set of steps before each test case.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QWithin this schema, each 'slideList' is represented as an object with attributes 'baseUrl' and 'slideList.'\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\Q'baseUrl' designates the URL leading to the slide storage, while 'slideList' is an array encapsulating individual slide objects.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\Q'slideName' designates the name of the slide and 'description' provides textual information about the slide.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QEach slide object encompasses attributes such as 'slideName,' 'properties,' and 'description.'\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QLeveraging the 'baseUrl' and 'slideName,' the backend can dynamically construct the URL for the DeepZoom (.dzi) image pyramid associated with each slide.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection.appendix.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QJSON object returned by the '/api/getCards' endpoint\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QThe frontend mainly interacts with the '/api/getCards' endpoint, which retrieves a list of cards from the database.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QThe 'Box' element has an 'id' of 'osd-viewer,' which OpenSeadragon uses to inject the viewer.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QAdditionally, the Viewer Module has multiple subcomponents, including 'ZoomButtons,' 'ViewerToolbar,' and 'ImportExportMenu.'\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QuseEffects for OpenSeadragon, Annotorious, and image loading\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QAdditionally, the 'ZoomButtons' component provides buttons for zooming in and out of the image.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\QThe 'ViewerToolbar' component houses the 'ZoomButtons' component and the 'ImportExportMenu' component, which provides functionality for importing and exporting annotations.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QScoring: For each statement, select the option that aligns with your experience: Strongly Disagree Disagree Neutral Agree Strongly Agree\\E$"}
+{"rule":"EN_SPECIFIC_CASE","sentence":"^\\QHypertext Markup Language Cascading Style Sheets JavaScript JavaScript Object Notation Scalable Vector Graphics\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QHypertext Markup Language Cascading Style Sheets JavaScript JavaScript Object Notation Scalable Vector Graphics\\E$"}
+{"rule":"EN_SPECIFIC_CASE","sentence":"^\\QHypertext Markup Language Cascading Style Sheets JavaScript JavaScript Object Notation User Interface Not Only SQL\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QHypertext Markup Language Cascading Style Sheets JavaScript JavaScript Object Notation User Interface Not Only SQL\\E$"}

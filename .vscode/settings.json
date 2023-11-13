@@ -1,0 +1,103 @@
+{
+  "files.exclude": {
+    //   "**/.git": true,
+    //   "**/.svn": true,
+    //   "**/.hg": true,
+    //   "**/CVS": true,
+    //   "**/.DS_Store": true,
+    //   "**/Thumbs.db": true,
+    //   "**/*.aux": true,
+    //   "**/*.bbl": true,
+    //   "**/*.fls": true,
+    //   "**/*.ind": true,
+    //   "**/*.nlo": true,
+    //   "**/*.lot": true,
+    //   "**/*.out": true,
+    //   "**/*.ldx": true,
+    //   "**/*.blg": true,
+    //   "**/*.idx": true,
+    //   "**/*.ilg": true,
+    //   "**/*.lof": true,
+    //   "**/*.toc": true,
+    //   "**/*.fdb_latexmk": true,
+    //   "**/*.log": true,
+    //   "**/*.bcf": true,
+    //   "**/*.run.xml": true,
+    //   "**/*.acn": true,
+    //   "**/*.glo": true,
+    //   "**/*.ist": true,
+    "**/svg-inkscape": true,
+    "**/indent.log": true
+    //   "**/*.gz": true
+  },
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.synctex(busy)",
+    "*.synctex.gz(busy)",
+    "*.nav",
+    "*.vrb",
+    "*.run.xml" // Added Manually
+  ],
+  // Edit the following property to change export directory
+  "latex-workshop.latex.outDir": "./PDF",
+
+  // Clean settings
+  // "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.clean.method": "glob",
+
+  // Build settings
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.texcount.autorun": "onSave",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdflatex=xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "--shell-escape",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "ltex.language": "en-AU",
+  "ltex.sentenceCacheSize": 10000,
+
+  // Remove / comment the next 3 lines to remove dark view for pdf
+  // "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#f1f1f1", // For Dark Viewer
+  // "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
+  "latex-workshop.view.pdf.color.dark.backgroundColor": "#333333", // For Dark Viewer
+
+  // Editor settings
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "editor.formatOnSave": true,
+
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^|%|\\\\)\\s*($TAGS)\\{*|^\\s*- \\[ \\])"
+}

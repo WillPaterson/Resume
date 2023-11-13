@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
+{
+  "name": "weblatex",
+  "image": "sanjibsen/weblatex:latest", // https://github.com/sanjib-sen/weblatex-docker
+  "remoteUser": "root", // Do not change this
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "GitHub.copilot",
+        "valentjn.vscode-ltex",
+        "mhutchie.git-graph",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "Gruntfuggly.todo-tree",
+        "PKief.material-icon-theme",
+        "jerrygoyal.shortcut-menu-bar",
+        "github.vscode-github-actions",
+        "tecosaur.latex-utilities",
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  }
+}

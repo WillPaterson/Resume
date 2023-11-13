@@ -1,0 +1,153 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+% \name{Claud D.}{Park}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+
+% \mobile{(+82) 10-9030-1843}
+% \email{posquit0.bj@gmail.com}
+% \homepage{www.posquit0.com}
+% \github{posquit0}
+% \linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+\name{William}{Paterson}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+% \position{Software Engineering Student}
+\address{Newcastle, New South Wales, Australia}
+
+\mobile{0468 320 234}
+\email{willtp5@outlook.com}
+% \homepage{www.posquit0.com}
+\github{Github.com/WillPaterson}
+\linkedin{Linkedin.com/in/WillTPaterson}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\newcommand{\recipientFirstName}[0]{FirstNameHere}
+\newcommand{\recipientLastName}[0]{LastNameHere}
+
+% \newcommand{\companyName}[0]{Company Name Here}
+\newcommand{\companyName}[0]{Unisys}
+
+\recipient
+%   {\recipientFirstName ~ \recipientLastName}
+    {\companyName}
+    { ~ } %Location
+% The date on the letter, default is the date of compilation
+% \letterdate{\today}
+\letterdate{}
+% The title of the letter
+\lettertitle{Expression of Interest for Software Engineering Internship }
+% How the letter is opened
+\letteropening{To whom it may concern, }
+% How the letter is closed
+\letterclosing{Thank you for your consideration,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Resume}
+
+% \usepackage[none]{hyphenat}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {William Paterson ~~~·~~~ Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter} 
+
+I am excited to have the chance at gaining industry experience through \companyName. Currently, I am on track to graduate the University of Newcastle with a Bachelor of Software Engineering (Honours) in 2023. Throughout my university degree I have learnt Data Structures using C++, Algorithms though Java and some arm-based microprocessor coding though my elective pathway of Digital Electronics. I have also gained extensive experience with Web Technologies by creating multiple web-based individual and group projects. These projects have helped build strong teamwork and problem-solving skills on top of showing importance of version control.
+
+Aside from my studies, I have held a long-term position at Williamtown McDonalds as Part-Time Overnight crew. This position has the unique challenge of requiring excellent time management with minimal crew. All while ensuring required tasks are completed to a high standard. In addition, working in a fast-paced team environment I have gained excellent team management and cooperation skills. Using these skills, I have helped mentor and train many crew members on correct and safe procedures. This position has help me develop my communication skill though interactions with crew members and customers.
+
+While studying at high school, I attended two work placements to complete my Certificate 1 in Metals and Engineering. These experiences gave me valuable knowledge relating to the real-world metal working industry. This allowed me to put into context what I had learnt at school in relation to metal working. It is my hope that by performing industry experience through \companyName that I can also gain similar valuable knowledge into the workings of the real tech industry. This knowledge would greatly assist in grounding my future career as a dependable and hardworking software engineer.  
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

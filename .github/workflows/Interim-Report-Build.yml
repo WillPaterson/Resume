@@ -1,0 +1,43 @@
+name: Build LaTeX document and Release Beta
+on: [pull_request]
+
+env:
+  WORKING_DIRECTORY: Resume
+  MAIN_FILE: resume
+
+jobs:
+  build_latex_and_release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@edge
+        with:
+          root_file: $MAIN_FILE.tex
+          working_directory: $WORKING_DIRECTORY
+          args: -synctex=0 -interaction=nonstopmode --shell-escape -pdf -file-line-error
+
+      - name: Save PDF as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: main.pdf
+          path: $WORKING_DIRECTORY/$MAIN_FILE.pdf
+
+      - name: Create WIP Release
+        id: create_release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "$WORKING_DIRECTORY/$MAIN_FILE.pdf"
+          generateReleaseNotes: true
+          allowUpdates: true
+          prerelease: true
+          body: |
+            Work In Progress
+          tag: wip-${{ github.head_ref }} # Use shorter commit hash as tag name
+          name: WIP Release - ${{ github.head_ref }} # Use pull request branch name as release name
