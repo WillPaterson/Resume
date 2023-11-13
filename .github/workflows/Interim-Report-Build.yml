@@ -26,18 +26,18 @@ jobs:
       - name: Save PDF as Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: main.pdf
+          name: $MAIN_FILE.pdf
           path: $WORKING_DIRECTORY/$MAIN_FILE.pdf
 
-      - name: Create WIP Release
-        id: create_release
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "$WORKING_DIRECTORY/$MAIN_FILE.pdf"
-          generateReleaseNotes: true
-          allowUpdates: true
-          prerelease: true
-          body: |
-            Work In Progress
-          tag: wip-${{ github.head_ref }} # Use shorter commit hash as tag name
-          name: WIP Release - ${{ github.head_ref }} # Use pull request branch name as release name
+      # - name: Create WIP Release
+      #   id: create_release
+      #   uses: ncipollo/release-action@v1
+      #   with:
+      #     artifacts: "$WORKING_DIRECTORY/$MAIN_FILE.pdf"
+      #     generateReleaseNotes: true
+      #     allowUpdates: true
+      #     prerelease: true
+      #     body: |
+      #       Work In Progress
+      #     tag: wip-${{ github.head_ref }} # Use shorter commit hash as tag name
+      #     name: WIP Release - ${{ github.head_ref }} # Use pull request branch name as release name

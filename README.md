@@ -4,7 +4,7 @@
 
 All releases can be found on the [Releases](https://github.com/WillPaterson/SENG4211-Report/releases) page.
 
-Note that Pre-Releases are built for every pull request.
+Note that Artefacts are built for every pull request.
 
 ## 🏃‍♂️ Running Locally
 
